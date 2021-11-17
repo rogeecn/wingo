@@ -1,4 +1,4 @@
-package win
+package wingo
 
 // Private constants.
 const (

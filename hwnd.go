@@ -1,4 +1,4 @@
-package win
+package wingo
 
 import (
 	proc2 "github.com/rogeecn/wingo/proc"
@@ -428,7 +428,7 @@ func (hWnd HWND) GetWindowLongPtr(index co.GWLP) uintptr {
 }
 
 // 📑 https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getwindowthreadprocessid
-func (hWnd HWND) GetWindowThreadProcessId() (uint32,uint32) {
+func (hWnd HWND) GetWindowThreadProcessId() (uint32, uint32) {
 	var processId uint32
 	ret, _, _ := syscall.Syscall(proc2.GetWindowThreadProcessId.Addr(), 2,
 		uintptr(hWnd), uintptr(unsafe.Pointer(&processId)), 0)

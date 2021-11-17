@@ -1,4 +1,4 @@
-package win
+package wingo
 
 import (
 	proc2 "github.com/rogeecn/wingo/proc"

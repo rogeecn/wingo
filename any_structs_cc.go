@@ -1,4 +1,4 @@
-package win
+package wingo
 
 import (
 	"github.com/rogeecn/wingo/util"
